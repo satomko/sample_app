@@ -24,8 +24,14 @@ group :test do
   gem 'capybara', '1.1.2'
   gem 'rspec-rails', '2.9.0' 
   # System-dependent gems
-  gem 'rb-inotify', '0.9'
-  gem 'libnotify', '0.5.9'
+  case RUBY_PLATFORM
+  when /darwin/
+    gem 'rb-fsevent', '>=0.4.3.1', :require => false
+    gem 'growl', '1.0.3'
+  when /linux/
+    gem 'rb-inotify', '0.9'
+    gem 'libnotify', '0.5.9'
+  end
 end
 
 group :production do
