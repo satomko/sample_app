@@ -13,5 +13,9 @@ git push heroku
 # to create new dev-branch
 git checkout -b new-dev-branch
 
+# to revert to a previous commit and update github
+git reset --hard <old-commit-id>
+git push -f
+
 
 
