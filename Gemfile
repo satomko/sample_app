@@ -9,8 +9,8 @@ def darwin_only(require_as)
 end
 
 gem 'rails', '3.2.3'
-#gem 'bootstrap-sass', '2.0.0'
-gem 'bootstrap-sass', '2.3.2.1'
+gem 'bootstrap-sass', '2.0.0'
+#gem 'bootstrap-sass', '2.3.2.1'
 #gem 'sass-rails',   '3.2.4'
 #gem 'bootstrap_helper'
 
@@ -43,6 +43,6 @@ end
 
 group :production do
   gem 'pg', '0.12.2'
-  gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
-  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+  #gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+  #gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 end

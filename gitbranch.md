@@ -17,5 +17,8 @@ git checkout -b new-dev-branch
 git reset --hard <old-commit-id>
 git push -f
 
+# to precompile headers
+RAILS_ENV=production bundle exec rake assets:precompile
+
 
 
