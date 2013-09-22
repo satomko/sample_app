@@ -13,11 +13,13 @@ gem 'bootstrap-sass', '2.0.0'
 #gem 'bootstrap-sass', '2.3.2.1'
 #gem 'sass-rails',   '3.2.4'
 #gem 'bootstrap_helper'
+gem 'bcrypt-ruby', '3.0.1'
 
 group :development do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.9.0'
   gem 'guard-rspec', '0.5.5'
+  gem 'annotate', '~> 2.4.1.beta'
 end
  
 
