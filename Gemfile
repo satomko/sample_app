@@ -41,6 +41,7 @@ group :test do
   gem 'growl', '1.0.3', :require => darwin_only('growl')
   gem 'rb-inotify', '0.9', :require => linux_only('rb-inotify')
   gem 'libnotify', '0.5.9', :require => linux_only('libnotify')
+  gem 'factory_girl_rails', '1.4.0'
 end
 
 group :production do
